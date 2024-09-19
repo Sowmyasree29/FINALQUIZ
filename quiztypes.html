@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.main{
+    min-height: 100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:blueviolet;
+}
+
+.inner{
+    display:grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.grids{
+    height:200px;
+    width:220px;
+    background-color:azure;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.btn{
+    margin:10px;
+    background-color:blueviolet;
+    height:40px;
+    width:150px;
+    border-radius:4px;
+    outline:none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .inner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .inner {
+        grid-template-columns: 1fr;
+    }
+    
+    .grids {
+        height:180px;
+        width:100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .grids {
+        height:160px;
+    }
+
+    .btn {
+        width:120px;
+        height:35px;
+    }
+}
+</style>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="grids">
+                <h2>Computer Networks</h2>
+                <button class="btn" id="first">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>Javascript</h2>
+                <button class="btn" id="second">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>React</h2>
+                <button class="btn" id="third">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>SQL</h2>
+                <button class="btn" id="fourth">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>AWS</h2>
+                <button class="btn" id="fifth">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>Java</h2>
+                <button class="btn" id="sixth">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>DSA</h2>
+                <button class="btn" id="seventh">Start quiz</button>
+            </div>
+            <div class="grids">
+                <h2>C++</h2>
+                <button class="btn" id="eighth">Start quiz</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("first").addEventListener("click",function() {
+        window.location.href="quiz.html";
+    });
+    document.getElementById("second").addEventListener("click",function() {
+        window.location.href="quiz2.html";
+    });
+    document.getElementById("third").addEventListener("click",function() {
+        window.location.href="quiz3.html";
+    });
+    document.getElementById("fourth").addEventListener("click",function() {
+        window.location.href="quiz4.html";
+    });
+    document.getElementById("fifth").addEventListener("click",function() {
+        window.location.href="quiz5.html";
+    });
+    document.getElementById("sixth").addEventListener("click",function() {
+        window.location.href="quiz6.html";
+    });
+    document.getElementById("seventh").addEventListener("click",function() {
+        window.location.href="quiz7.html";
+    });
+    document.getElementById("eighth").addEventListener("click",function() {
+        window.location.href="quiz8.html";
+    });
+</script>
+</html>
