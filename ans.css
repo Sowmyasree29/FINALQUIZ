@@ -6,7 +6,8 @@
 .app {
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
+    background-image: url("./quiz4.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +48,8 @@
 .btn:hover {
     background-color: blueviolet;
     color: white;
-    font-size: 20px;
+    transform: scale(1.05); 
+    font-size: 16px;
 }
 
 .btn2 {
@@ -67,7 +69,7 @@
 #next:hover {
     background-color: blueviolet;
     color: white;
-    font-size: 20px;
+    
 }
 
 .correct {
