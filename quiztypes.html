@@ -12,7 +12,8 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:blueviolet;
+    background-image: url("./quiz4.jpg");
+    background-size: cover;
 }
 
 .inner{
@@ -23,16 +24,24 @@
     column-gap: 20px;
 }
 
-.grids{
-    height:200px;
-    width:220px;
-    background-color:azure;
-    border:1px solid black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
+.grids {
+    height: 200px;
+    width: 220px;
+    background-color: azure;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
+
+.grids:hover {
+     /* Adjust as desired */
+    border-color:mediumpurple; /* Adjust as desired */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
 
 .btn{
     margin:10px;
